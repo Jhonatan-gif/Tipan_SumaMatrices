@@ -4,22 +4,21 @@
 
 int main()
 {
-    //Pedir dimensiones
-    int fil , col, i, j;
+    // Pedir dimensiones
+    int fil, col, i, j;
     printf("Ingrese el numero de filas de la matriz: ");
     scanf("%d", &fil);
     printf("Ingrese el numero de columnas de la matriz: ");
     scanf("%d", &col);
 
-
-    //numeros aleatorios e impresion de la matriz original
+    // numeros aleatorios e impresion de la matriz original
     int matrixA[fil][col];
     int matrixB[fil][col];
 
     srand(time(0));
 
-    //Impresion Matriz 1
-    printf("\nMatriz original:\n");
+    // Impresion Matriz 1
+    printf("\nMatriz numero uno\n");
     for (i = 0; i < fil; i++)
     {
         for (j = 0; j < col; j++)
@@ -30,9 +29,9 @@ int main()
         printf("\n");
     }
 
-    printf ("\n");
+    // Impresion Matriz 2
+    printf("\nMatriz numero dos\n");
 
-    //Impresion Matriz 2
     for (i = 0; i < fil; i++)
     {
         for (j = 0; j < col; j++)
@@ -43,20 +42,17 @@ int main()
         printf("\n");
     }
 
+    // Resultado de la suma de Matrices
+    printf("\nEl resultado es : \n");
 
-    printf("\n");
-
-    
     for (i = 0; i < fil; i++)
     {
         for (j = 0; j < col; j++)
         {
-            printf("%d \t ", matrixB[i][j]+matrixA[i][j]);
+            printf("%d \t ", matrixB[i][j] + matrixA[i][j]);
         }
         printf("\n");
     }
-    
 
-
-    return 0;   
+    return 0;
 }
