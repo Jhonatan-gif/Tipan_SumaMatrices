@@ -43,6 +43,18 @@ int main()
         printf("\n");
     }
 
+
+    printf("\n");
+
+    
+    for (i = 0; i < fil; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("%d \t ", matrixB[i][j]+matrixA[i][j]);
+        }
+        printf("\n");
+    }
     
 
 
