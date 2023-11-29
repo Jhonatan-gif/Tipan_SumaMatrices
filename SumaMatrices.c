@@ -11,5 +11,27 @@ int main()
     printf("Ingrese el numero de columnas de la matriz: ");
     scanf("%d", &col);
 
-return 0;
+
+    //numeros aleatorios e impresion de la matriz original
+    int matrixA[fil][col];
+    int matrixB[fil][col];
+
+    srand(time(0));
+
+    //Impresion Matriz 1
+    printf("\nMatriz original:\n");
+    for (i = 0; i < fil; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            matrixA[i][j] = rand() % 101;
+            printf("%d \t ", matrixA[i][j]);
+        }
+        printf("\n");
+    }
+
+    
+
+
+    return 0;   
 }
