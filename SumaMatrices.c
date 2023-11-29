@@ -30,6 +30,19 @@ int main()
         printf("\n");
     }
 
+    printf ("\n");
+
+    //Impresion Matriz 2
+    for (i = 0; i < fil; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            matrixB[i][j] = rand() % 101;
+            printf("%d \t ", matrixB[i][j]);
+        }
+        printf("\n");
+    }
+
     
 
 
